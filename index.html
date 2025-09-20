@@ -1,108 +1,113 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sneha Elizabeth Saji | Portfolio</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero" id="hero">
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="#hero" class="logo">Sneha Saji</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">Sneha Saji</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
     <div class="hero-content">
-      <h1 class="fade-in">Hi, I’m <span class="highlight">Sneha Elizabeth Saji</span></h1>
-      <p class="subtitle fade-in delay-1">Full Stack Developer · Database Engineer · ML Enthusiast</p>
-      <div class="cta fade-in delay-2">
-        <a href="#contact" class="btn primary">Get in Touch</a>
-        <a href="resume.pdf" class="btn secondary" download>Resume</a>
+      <h1 class="animate-text">Hi, I'm <span class="highlight">Sneha Elizabeth Saji</span></h1>
+      <p class="subtitle animate-text delay-1">
+        Full Stack Developer · Database Engineer · ML Enthusiast
+      </p>
+      <div class="cta animate-text delay-2">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section fade-section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>Results-driven Full Stack Developer… (your about text here)</p>
-      </div>
-    </section>
-
-    <section id="experience" class="section fade-section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="card">
-          <h3>Information Technology Specialist — Office of NYS Comptroller</h3>
-          <span class="meta">Jun 2025 – Present | Albany, NY</span>
-          <ul>
-            <li>Administer PeopleSoft 9.2 & HCM (roles, security, Application Designer).</li>
-            <li>Manage Oracle Fusion Cloud / CI/CD, etc.</li>
-            <!-- etc -->
-          </ul>
-        </div>
-        <!-- other experience cards -->
-      </div>
-    </section>
-
-    <section id="projects" class="section fade-section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Health Care Management System</h3>
-            <p>Description…</p>
-          </div>
-          <div class="project-card">
-            <h3>Liquid Level Detection Research</h3>
-            <p>Description…</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section fade-section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-list">
-          <span class="skill">Java</span>
-          <span class="skill">Spring Boot</span>
-          <span class="skill">Python</span>
-          <span class="skill">ReactJS</span>
-          <span class="skill">Oracle</span>
-          <!-- more -->
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section fade-section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out via email or LinkedIn</p>
-        <p>
-          📧 <a href="mailto:snehaelizabeth127@gmail.com">snehaelizabeth127@gmail.com</a><br>
-          🔗 <a href="https://www.linkedin.com/in/sneha-elizabeth-saji-1b8585221">LinkedIn</a> · <a href="https://github.com/SnehaElizabethSaji">GitHub</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section fade-section">
     <div class="container">
-      <p>© 2025 Sneha Elizabeth Saji · Built with ❤ · GitHub Pages</p>
+      <h2>About Me</h2>
+      <p>Results-driven Full Stack Developer with 6+ years experience in Java, Spring Boot, React, Oracle, and AWS. Skilled in designing scalable systems and automating workflows. Passionate about data, machine learning, and building end-to-end solutions.</p>
     </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section fade-section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Information Technology Specialist — NYS Comptroller</h3>
+        <span class="meta">Jun 2025 – Present</span>
+        <ul>
+          <li>Administer PeopleSoft 9.2 security and integrations.</li>
+          <li>Maintain Oracle Fusion Cloud modules and CI/CD pipelines.</li>
+          <li>Automate with LoadRunner, Shell & Batch scripts.</li>
+        </ul>
+      </div>
+      <!-- Add more experience cards here -->
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section fade-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Health Care Management System</h3>
+          <p>Full-stack app with Spring Boot, Angular, Oracle.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.png" alt="Project 2">
+          <h3>Liquid Level Detection</h3>
+          <p>PyTorch-based research project (IEEE ENT 2024).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section fade-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Java</span>
+        <span class="skill">Spring Boot</span>
+        <span class="skill">React</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section fade-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>📧 <a href="mailto:snehaelizabeth127@gmail.com">snehaelizabeth127@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/sneha-elizabeth-saji-1b8585221/">LinkedIn</a> · <a href="https://github.com/SnehaElizabethSaji">GitHub</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Sneha Elizabeth Saji | Built with ❤️ on GitHub Pages</p>
   </footer>
 
   <script src="assets/main.js"></script>
